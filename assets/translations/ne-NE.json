@@ -1129,6 +1129,11 @@
       "NotEqual": "बराबर छैन"
     },
     "heading": {
+      "Create Agriculture Loan": "कृषि ऋण सिर्जना गर्नुहोस्",
+      "Create Education Loan": "शैक्षिक ऋण सिर्जना गर्नुहोस्",
+      "Create Personal Loan": "व्यक्तिगत ऋण सिर्जना गर्नुहोस्",
+      "Create Two Wheeler Loan": "दुई पाङ्ग्रे सवारी ऋण सिर्जना गर्नुहोस्",
+      "Custom / Advanced Loan Configuration": "अनुकूलित / उन्नत ऋण कन्फिगरेसन",
       "Breach Actions": "उल्लंघन कार्यहरू",
       "Delinquency & Breach": "अपराध र उल्लंघन",
       "Interest": "ब्याज",
@@ -2839,6 +2844,7 @@
       "Reschedule Reason": "पुन: तालिका कारण",
       "Reschedule Request": "पुन: तालिका अनुरोध",
       "Reschedule from Installment On": "किस्ताबाट पुन: तालिका अन",
+      "Reset": "रिसेट गरिएको",
       "Residence Phone": "निवास फोन",
       "Resource": "स्रोत",
       "Resource ID": "स्रोत ID",
@@ -3076,6 +3082,7 @@
       "Unable to update password": "पासवर्ड अद्यावधिक गर्न सकिँदैन",
       "Unassigned": "तोकिएको छैन",
       "Unassignment Date": "असाइनमेन्ट मिति",
+      "Undone": "पूर्ववत् गरियो",
       "Unique": "अद्वितीय",
       "Unit Type": "एकाइ प्रकार",
       "Unrealized Income": "अप्राप्त आम्दानी",
@@ -3234,7 +3241,8 @@
       "Cross Rate": "क्रस दर",
       "Cross Rate via": "क्रस दर ({{ currency }} मार्फत)",
       "Administrator": "प्रशासक",
-      "Provider": "प्रदायक"
+      "Provider": "प्रदायक",
+      "Dispute Management": "Vivad Vyavasthapan"
     },
     "links": {
       "Community": "समुदाय",
@@ -3412,6 +3420,7 @@
       "Withdrawn": "फिर्ता लिन"
     },
     "dialogContext": {
+      "A new clean period will start today": "आजबाट नयाँ सफा अवधि सुरु हुनेछ।",
       "Are you sure you want to resume the breach pause": "के तपाईं उल्लंघन रोकी राखिएको अवस्था पुनः सुरु गर्न चाहनुहुन्छ?",
       "Are you sure you want Unassign Staff": "के तपाईं निश्चित हुनुहुन्छ कि तपाईंले कर्मचारीलाई अनपाइन्ट गर्न चाहनुहुन्छ?",
       "Are you sure you want to calculate interest ?": "के तपाईं निश्चित हुनुहुन्छ कि तपाईं ब्याजहरू गणना गर्न चाहनुहुन्छ?",
@@ -3428,6 +3437,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "के तपाईं निश्चित हुनुहुन्छ कि तपाईं कर्जाको लागि दोषभूतता वर्गीकरण पुनर्आरंभ गर्न चाहनुहुन्छ?",
       "Are you sure you want": "के तपाईं निश्चित हुनुहुन्छ",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "अपराध सक्षम गर्दा अपराध मूल्यांकन पुनः सुरु हुन्छ र हालको व्यापार मितिमा पुनः गणना गरिन्छ",
+      "Reset neutralizes overdue delinquency periods effective today": "यो कार्य आजबाट लागू हुन्छ र सबै म्याद नाघेका बक्यौता अवधिहरूलाई निष्क्रिय पार्दै तिनका बक्यौता ट्यागहरू हटाउँछ।",
+      "Start new period splits the current period today": "सक्षम पारेमा, हालको अवधि आजको मितिमा विभाजन हुन्छ र आजबाट नयाँ अवधि सुरु हुन्छ।",
       "the Loan Reschedule": "कर्जा पुनर्योजना",
       "Are you sure you want undo the transaction": "के तपाईं निश्चित हुनुहुन्छ कि तपाईं यस लेन-देनलाई पूर्वस्थिति मा पर्खन चाहनुहुन्छ?",
       "Are you sure you want undo the transaction type": "के तपाईं निश्चित हुनुहुन्छ कि तपाईं यस लेन-देन प्रकारलाई पूर्वस्थिति मा पर्खन चाहनुहुन्छ?",
@@ -3447,6 +3458,14 @@
       "undo_account_transfer": "के तपाईं यो खाता स्थानान्तरण रद्द गर्न निश्चित हुनुहुन्छ?"
     },
     "text": {
+      "Agriculture Loan": "कृषि ऋण",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "बाली उत्पादन, कृषि उपकरण वा जग्गा विकास जस्ता कृषिसम्बन्धी आवश्यकताका लागि ऋण, जुन प्रायः कृषि चक्रसँग मिलाइएको हुन्छ।",
+      "Education Loan": "शैक्षिक ऋण",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "स्वदेश वा विदेशमा अध्ययनका लागि शुल्क र सम्बन्धित खर्चको वित्तीय सहायता, पाठ्यक्रम अवधिअनुसार मिलाइएका भुक्तानी विकल्पसहित।",
+      "Personal Loan": "व्यक्तिगत ऋण",
+      "Custom / Advanced": "अनुकूलित / उन्नत",
+      "Two Wheeler Loan": "दुई पाङ्ग्रे सवारी ऋण",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "नयाँ वा प्रयोग भइसकेका दुई पाङ्ग्रे सवारीका लागि छिटो स्वीकृति र लचिलो डाउन पेमेन्ट विकल्पसहितको वित्तीय सुविधा।",
       "Max": "अधिकतम",
       "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "कुनै उल्लंघन कार्यहरू छैन",
@@ -4614,6 +4633,32 @@
         "latePayments": "ढिलो भुक्तानी",
         "noData": "प्रोफाइल उपलब्ध छैन",
         "noDataHint": "ब्यूरो जाँच चलाउनुहोस्"
+      },
+      "dispute": {
+        "raiseTitle": "Naya vivad uthaunus",
+        "lookupTitle": "Avasthit vivad khojnus",
+        "submissionRecordId": "Submission Record ID",
+        "disputeDetails": "Vivadko vivaran",
+        "submissionIdRequired": "Submission ID aavasyak cha",
+        "detailsRequired": "Vivaran kamtima 10 akshar hunuparcha",
+        "raise": "Vivad uthaunus",
+        "lookup": "Khojnus",
+        "disputeId": "Vivad ID",
+        "id": "Vivad",
+        "submissionRef": "Submission sandarbha",
+        "raisedBy": "Uthaaune vyakti",
+        "openedAt": "Kholiyako miti",
+        "details": "Vivaran",
+        "resolvedAt": "Samadhan miti",
+        "resolutionNotes": "Samadhan notaharu",
+        "expiry": "Myad samapti",
+        "markUnderReview": "Sameekshama chinh lagaunus",
+        "resolve": "Vivad samadhan garnus",
+        "raised": "Vivad #{{ id }} safaltapurbak uthaiyo",
+        "statusUpdated": "Vivadko sthiti {{ status }} ma update bhayo"
+      },
+      "errors": {
+        "badRequest": "अमान्य अनुरोध। सबमिशन रेकर्ड ID जाँच गर्नुहोस्।"
       }
     }
   },
@@ -4733,6 +4778,8 @@
     "May be entered to override": "प्रणालीले तालिका बनाउने मिति ओभरराइड गर्न प्रविष्ट गर्न सकिन्छ",
     "May be entered to override the date": "प्रणालीले ब्याज लिन सुरु गर्ने मितिलाई ओभरराइड गर्न प्रविष्ट गर्न सकिन्छ",
     "Minimum active period to consider for dividend calculations": "लाभांश गणनाको लागि विचार गर्न न्यूनतम सक्रिय अवधि",
+    "Minimum payment criteria met": "न्यूनतम भुक्तानी मापदण्ड पूरा भयो।",
+    "Minimum payment criteria not met": "न्यूनतम भुक्तानी मापदण्ड पूरा भएन।",
     "NPA (non performing asset) once the number of days": "यो क्षेत्रमा प्रवेश गरेको दिनको संख्या नाघेपछि ऋण भनेको NPA (नन परफॉर्मिङ एसेट) हो। यदि यो क्षेत्र खाली छ भने, निर्धारित भुक्तानी छुटेको भोलिपल्ट ऋण NPA हुनेछ।",
     "Name of the loan product": "ऋण खातामा आधारित ऋण उत्पादनको नाम",
     "Navigation": "नेभिगेसन",
@@ -4744,6 +4791,7 @@
     "Number of decimal places to be used to track and report": "ऋण ट्र्याक गर्न र रिपोर्ट गर्न प्रयोग गरिने दशमलव स्थानहरूको संख्या।",
     "PENDING": "पेन्डिङ",
     "Pay Charge": "शुल्क तिर्नुहोस्",
+    "Period not yet evaluated": "अवधि अझै मूल्याङ्कन गरिएको छैन।",
     "Primary Key": "प्राथमिक कुञ्जी",
     "Print Loan Application": "ऋण आवेदन छाप्नुहोस्",
     "Process Remittance": "रेमिट्यान्स प्रक्रिया",
@@ -4760,6 +4808,7 @@
     "Remove Client from Group": "समूहबाट ग्राहक हटाउनुहोस्",
     "Remove Period": "अवधि हटाउनुहोस्",
     "Repayment schedule will start the installment": "भुक्तानी तालिका पेश गरिएको मिति वा वितरण मितिबाट किस्ता मितिहरू सुरु हुनेछ",
+    "Reset delinquency period": "रिसेट गरिएको बक्यौता अवधि (निष्क्रिय, अपेक्षित रकम छैन)।",
     "Resume Delinquency Classification": "Deminuquicum वर्गीकरण पुनः सुरु गर्नुहोस्",
     "Savings Account": "बचत खाता",
     "Sets the balance required for interest calculation": "ब्याज गणनाको लागि आवश्यक ब्यालेन्स सेट गर्दछ",

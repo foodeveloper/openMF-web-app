@@ -1128,6 +1128,11 @@
       "NotEqual": "Sio sawa"
     },
     "heading": {
+      "Create Agriculture Loan": "Unda Mkopo wa Kilimo",
+      "Create Education Loan": "Unda Mkopo wa Elimu",
+      "Create Personal Loan": "Unda Mkopo wa Binafsi",
+      "Create Two Wheeler Loan": "Unda Mkopo wa Pikipiki",
+      "Custom / Advanced Loan Configuration": "Usanidi wa Mkopo Maalum / wa Kina",
       "Breach Actions": "Ukiukaji Vitendo",
       "Delinquency & Breach": "Uhalifu na Ukiukaji",
       "Interest": "Riba",
@@ -2837,6 +2842,7 @@
       "Reschedule Reason": "Panga upya Sababu",
       "Reschedule Request": "Panga upya Ombi",
       "Reschedule from Installment On": "Ratibu upya kutoka kwa Ufungaji Washa",
+      "Reset": "Imewekwa upya",
       "Residence Phone": "Simu ya Makazi",
       "Resource": "Rasilimali",
       "Resource ID": "Kitambulisho cha Rasilimali",
@@ -3074,6 +3080,7 @@
       "Unable to update password": "Haiwezi kusasisha nenosiri",
       "Unassigned": "Haijakabidhiwa",
       "Unassignment Date": "Tarehe ya kutokabidhiwa",
+      "Undone": "Imetenduliwa",
       "Unique": "Kipekee",
       "Unit Type": "Aina ya kitengo",
       "Unrealized Income": "Mapato Yasiyopatikana",
@@ -3232,7 +3239,8 @@
       "Cross Rate": "Kiwango cha msalaba",
       "Cross Rate via": "Kiwango cha msalaba (kupitia {{ currency }})",
       "Administrator": "Msimamizi",
-      "Provider": "Mtoa huduma"
+      "Provider": "Mtoa huduma",
+      "Dispute Management": "Usimamizi wa Migogoro"
     },
     "links": {
       "Community": "Jumuiya",
@@ -3409,6 +3417,7 @@
       "Withdrawn": "Kutolewa"
     },
     "dialogContext": {
+      "A new clean period will start today": "Kipindi kipya safi kitaanza kuanzia leo.",
       "Are you sure you want to resume the breach pause": "Je, una hakika unataka kuendelea na kusitishwa kwa ukiukaji?",
       "Are you sure you want Unassign Staff": "Je, una uhakika unataka kuondoa wafanyakazi?",
       "Are you sure you want to calculate interest ?": "Je, una uhakika unataka kuhesabu riba?",
@@ -3425,6 +3434,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "Je, una uhakika unataka kuendelea na uainishaji wa malipo kwa mkopo?",
       "Are you sure you want": "Je, una uhakika unataka",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "Kuwasha udaiwa kunaendelea na tathmini ya udaiwa na kuihesabu upya kwa tarehe ya biashara ya sasa",
+      "Reset neutralizes overdue delinquency periods effective today": "Kitendo hiki huanza kutumika leo na hubatilisha vipindi vyote vya udaiwa vilivyopitwa na wakati, na kuondoa alama zake za udaiwa.",
+      "Start new period splits the current period today": "Ikiwashwa, kipindi cha sasa hugawanywa katika tarehe ya leo na kipindi kipya huanza kuanzia leo.",
       "the Loan Reschedule": "kupangilia upya mkopo",
       "Are you sure you want undo the transaction": "Je, una uhakika unataka kufuta hii muamala?",
       "Are you sure you want undo the transaction type": "Je, una uhakika unataka kufuta aina ya muamala?",
@@ -3444,6 +3455,14 @@
       "undo_account_transfer": "Una uhakika unataka kufuta uhamisho huu wa akaunti?"
     },
     "text": {
+      "Agriculture Loan": "Mkopo wa Kilimo",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "Mkopo kwa mahitaji ya kilimo kama vile uzalishaji wa mazao, vifaa au uendelezaji wa ardhi, ambao mara nyingi hufungamanishwa na misimu ya kilimo.",
+      "Education Loan": "Mkopo wa Elimu",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "Ufadhili wa ada na gharama zinazohusiana kwa masomo ya ndani au ya nje ya nchi, wenye chaguo za ulipaji zinazolingana na muda wa kozi.",
+      "Personal Loan": "Mkopo wa Binafsi",
+      "Custom / Advanced": "Maalum / wa Kina",
+      "Two Wheeler Loan": "Mkopo wa Pikipiki",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "Ufadhili wa pikipiki mpya au zilizotumika wenye idhini ya haraka na chaguo nyumbufu za malipo ya awali.",
       "Max": "Upeo",
       "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "Hakuna Ukiukaji Vitendo",
@@ -4611,6 +4630,32 @@
         "latePayments": "Malipo ya kuchelewa",
         "noData": "Hakuna wasifu bado",
         "noDataHint": "Endesha ukaguzi wa shirika"
+      },
+      "dispute": {
+        "raiseTitle": "Anza mgogoro mpya",
+        "lookupTitle": "Tafuta mgogoro uliopo",
+        "submissionRecordId": "ID ya rekodi ya uwasilishaji",
+        "disputeDetails": "Maelezo ya mgogoro",
+        "submissionIdRequired": "ID ya rekodi inahitajika",
+        "detailsRequired": "Maelezo lazima yawe na angalau herufi 10",
+        "raise": "Anza mgogoro",
+        "lookup": "Tafuta",
+        "disputeId": "ID ya mgogoro",
+        "id": "Mgogoro",
+        "submissionRef": "Kumbukumbu ya uwasilishaji",
+        "raisedBy": "Ilianzishwa na",
+        "openedAt": "Ilifunguliwa",
+        "details": "Maelezo",
+        "resolvedAt": "Ilitatuliwa",
+        "resolutionNotes": "Maelezo ya utatuzi",
+        "expiry": "Tarehe ya kumalizika",
+        "markUnderReview": "Weka alama ya kukaguliwa",
+        "resolve": "Tatua mgogoro",
+        "raised": "Mgogoro #{{ id }} ulianzishwa kwa mafanikio",
+        "statusUpdated": "Hali ya mgogoro imesasishwa hadi {{ status }}"
+      },
+      "errors": {
+        "badRequest": "Ombi batili. Angalia ID ya rekodi ya uwasilishaji."
       }
     }
   },
@@ -4730,6 +4775,8 @@
     "May be entered to override": "Inaweza kuingizwa ili kubatilisha tarehe ambayo mfumo ungeratibu",
     "May be entered to override the date": "Inaweza kuingizwa ili kubatilisha tarehe ambayo mfumo utaanza kutoza riba",
     "Minimum active period to consider for dividend calculations": "Kipindi cha chini cha matumizi cha kuzingatia kwa hesabu za mgao",
+    "Minimum payment criteria met": "Vigezo vya malipo ya chini vimetimizwa.",
+    "Minimum payment criteria not met": "Vigezo vya malipo ya chini havijatimizwa.",
     "NPA (non performing asset) once the number of days": "Mkopo ni NPA (rasilimali isiyolipika) mara tu idadi ya siku zilizoingizwa kwenye uwanja huu inapopitwa. Ikiwa sehemu hii haijajazwa, mkopo utakuwa NPA siku moja baada ya malipo yaliyoratibiwa kukosa.",
     "Name of the loan product": "Jina la bidhaa ya mkopo ambayo akaunti ya mkopo inategemea",
     "Navigation": "Urambazaji",
@@ -4741,6 +4788,7 @@
     "Number of decimal places to be used to track and report": "Idadi ya sehemu za desimali zitatumika kufuatilia na kuripoti mikopo.",
     "PENDING": "INAKARIBISHWA",
     "Pay Charge": "Lipa Ada",
+    "Period not yet evaluated": "Kipindi bado hakijatathminiwa.",
     "Primary Key": "Ufunguo Msingi",
     "Print Loan Application": "Chapisha Ombi la Mkopo",
     "Process Remittance": "Chakata uhawilishaji",
@@ -4757,6 +4805,7 @@
     "Remove Client from Group": "Ondoa Mteja kutoka kwa Kikundi",
     "Remove Period": "Ondoa Kipindi",
     "Repayment schedule will start the installment": "Ratiba ya malipo itaanza tarehe za malipo kuanzia tarehe iliyowasilishwa au tarehe ya malipo",
+    "Reset delinquency period": "Kipindi cha udaiwa kilichowekwa upya (kimebatilishwa, hakuna kiasi kinachotarajiwa).",
     "Resume Delinquency Classification": "Anza uainishaji wa udanganyifu",
     "Savings Account": "Akaunti ya Akiba",
     "Sets the balance required for interest calculation": "Huweka salio linalohitajika kwa kukokotoa riba",

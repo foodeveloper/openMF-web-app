@@ -1131,6 +1131,11 @@
       "NotEqual": "Nerovná se"
     },
     "heading": {
+      "Create Agriculture Loan": "Vytvořit zemědělský úvěr",
+      "Create Education Loan": "Vytvořit studentský úvěr",
+      "Create Personal Loan": "Vytvořit osobní úvěr",
+      "Create Two Wheeler Loan": "Vytvořit úvěr na motocykly a skútry",
+      "Custom / Advanced Loan Configuration": "Vlastní / pokročilá konfigurace úvěru",
       "Breach Actions": "Porušení Akce",
       "Delinquency & Breach": "Delikvence a porušení",
       "Interest": "Úrok",
@@ -2840,6 +2845,7 @@
       "Reschedule Reason": "Důvod přeplánování",
       "Reschedule Request": "Žádost o přeplánování",
       "Reschedule from Installment On": "Přeplánujte od Splátky",
+      "Reset": "Resetováno",
       "Residence Phone": "Telefon bydliště",
       "Resource": "Zdroj",
       "Resource ID": "ID zdroje",
@@ -3077,6 +3083,7 @@
       "Unable to update password": "Nelze aktualizovat heslo",
       "Unassigned": "Nepřiřazeno",
       "Unassignment Date": "Datum vyřazení",
+      "Undone": "Vráceno zpět",
       "Unique": "Unikátní",
       "Unit Type": "Typ jednotky",
       "Unrealized Income": "Nerealizovaný výnos",
@@ -3235,7 +3242,8 @@
       "Cross Rate": "Křížový kurz",
       "Cross Rate via": "Křížový kurz (přes {{ currency }})",
       "Administrator": "Administrátor",
-      "Provider": "Poskytovatel"
+      "Provider": "Poskytovatel",
+      "Dispute Management": "Správa sporů"
     },
     "links": {
       "Community": "Společenství",
@@ -3413,6 +3421,7 @@
       "Withdrawn": "Stažený"
     },
     "dialogContext": {
+      "A new clean period will start today": "Ode dneška začne nové čisté období.",
       "Are you sure you want to resume the breach pause": "Opravdu chcete obnovit porušení?",
       "Are you sure you want Unassign Staff": "Opravdu chcete odebrat přiřazení zaměstnance?",
       "Are you sure you want to calculate interest ?": "Jste si jisti, že chcete spočítat zájem?",
@@ -3429,6 +3438,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "Jste si jisti, že chcete pokračovat v klasifikaci delikvence pro půjčku",
       "Are you sure you want": "Jsi si jistý že chceš",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "Povolení delikvence obnoví hodnocení delikvence a přepočítá je k aktuálnímu obchodnímu datu",
+      "Reset neutralizes overdue delinquency periods effective today": "Tato akce nabývá účinnosti dnes, neutralizuje všechna prošlá období delikvence a odstraní jejich příznaky delikvence.",
+      "Start new period splits the current period today": "Pokud je povoleno, aktuální období se rozdělí k dnešnímu datu a nové období začne ode dneška.",
       "the Loan Reschedule": "Půjčka přeplánují",
       "Are you sure you want undo the transaction": "Jste si jisti, že chcete vrátit transakci",
       "Are you sure you want undo the transaction type": "Jste si jisti, že chcete vrátit typ transakce",
@@ -3448,6 +3459,14 @@
       "undo_account_transfer": "Opravdu chcete vrátit tento převod účtu?"
     },
     "text": {
+      "Agriculture Loan": "Zemědělský úvěr",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "Úvěr na potřeby spojené se zemědělstvím, jako je rostlinná výroba, technika nebo zúrodnění půdy, obvykle navázaný na zemědělské cykly.",
+      "Education Loan": "Studentský úvěr",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "Financování školného a souvisejících výdajů při studiu v tuzemsku i zahraničí, se splácením přizpůsobeným délce studia.",
+      "Personal Loan": "Osobní úvěr",
+      "Custom / Advanced": "Vlastní / pokročilé",
+      "Two Wheeler Loan": "Úvěr na motocykly a skútry",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "Financování nových i ojetých motocyklů a skútrů s rychlým schválením a flexibilní zálohou.",
       "Max": "Max",
       "Hidden variables and predefined values are included in the final payload automatically.": "Skryté proměnné a předdefinované hodnoty jsou automaticky zahrnuty do konečného payloadu.",
       "No Breach Actions": "Žádné Porušení Akce",
@@ -4611,6 +4630,32 @@
         "latePayments": "Opožděné platby",
         "noData": "Kreditní profil není k dispozici",
         "noDataHint": "Spusťte kontrolu bureau"
+      },
+      "dispute": {
+        "raiseTitle": "Podat nový spor",
+        "lookupTitle": "Vyhledat existující spor",
+        "submissionRecordId": "ID záznamu podání",
+        "disputeDetails": "Podrobnosti sporu",
+        "submissionIdRequired": "ID záznamu je povinné",
+        "detailsRequired": "Podrobnosti musí mít alespoň 10 znaků",
+        "raise": "Podat spor",
+        "lookup": "Vyhledat",
+        "disputeId": "ID sporu",
+        "id": "Spor",
+        "submissionRef": "Ref. podání",
+        "raisedBy": "Podal",
+        "openedAt": "Otevřeno",
+        "details": "Podrobnosti",
+        "resolvedAt": "Vyřešeno",
+        "resolutionNotes": "Poznámky k řešení",
+        "expiry": "Datum vypršení",
+        "markUnderReview": "Označit jako v přezkumu",
+        "resolve": "Vyřešit spor",
+        "raised": "Spor #{{ id }} úspěšně podán",
+        "statusUpdated": "Stav sporu aktualizován na {{ status }}"
+      },
+      "errors": {
+        "badRequest": "Neplatný požadavek. Zkontrolujte ID záznamu podání."
       }
     }
   },
@@ -5021,6 +5066,8 @@
     "May be entered to override": "Může být zadáno pro přepsání data, které by systém naplánoval",
     "May be entered to override the date": "Může být zadáno pro přepsání data, kdy systém začne účtovat úrok",
     "Minimum active period to consider for dividend calculations": "Minimální aktivní období, které je třeba vzít v úvahu pro výpočty dividend",
+    "Minimum payment criteria met": "Kritérium minimální platby splněno.",
+    "Minimum payment criteria not met": "Kritérium minimální platby nesplněno.",
     "NPA (non performing asset) once the number of days": "Půjčka je NPA (nesplácené aktivum), jakmile je překročen počet dní zadaných do tohoto pole. Pokud je toto pole prázdné, půjčka bude NPA den po zmeškání plánované platby.",
     "Name of the loan product": "Název úvěrového produktu, na kterém je založen úvěrový účet",
     "Navigation": "Navigace",
@@ -5032,6 +5079,7 @@
     "Number of decimal places to be used to track and report": "Počet desetinných míst, která se mají použít ke sledování a vykazování výpůjček.",
     "PENDING": "ČEKÁ NA VYŘÍZENÍ",
     "Pay Charge": "Zaplatit poplatek",
+    "Period not yet evaluated": "Období dosud nevyhodnoceno.",
     "Primary Key": "Primární klíč",
     "Print Loan Application": "Tisknout žádost o úvěr",
     "Process Remittance": "Zpracovat remitenci",
@@ -5048,6 +5096,7 @@
     "Remove Client from Group": "Odebrat klienta ze skupiny",
     "Remove Period": "Odebrat období",
     "Repayment schedule will start the installment": "Splátkový kalendář zahájí splátkový kalendář od zadaného data nebo od data výplaty",
+    "Reset delinquency period": "Resetované období delikvence (neutralizováno, žádná očekávaná částka).",
     "Resume Delinquency Classification": "Pokračovat v klasifikaci delikvence",
     "Savings Account": "Spořící účet",
     "Sets the balance required for interest calculation": "Nastavuje zůstatek potřebný pro výpočet úroku",

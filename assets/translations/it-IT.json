@@ -1130,6 +1130,11 @@
       "NotEqual": "Diverso da"
     },
     "heading": {
+      "Create Agriculture Loan": "Crea prestito agricolo",
+      "Create Education Loan": "Crea prestito per studi",
+      "Create Personal Loan": "Crea prestito personale",
+      "Create Two Wheeler Loan": "Crea prestito per veicoli a due ruote",
+      "Custom / Advanced Loan Configuration": "Configurazione prestito personalizzata / avanzata",
       "Breach Actions": "Azioni di violazione",
       "Delinquency & Breach": "Delinquenza e violazione",
       "Interest": "Interessi",
@@ -2840,6 +2845,7 @@
       "Reschedule Reason": "Motivo della riprogrammazione",
       "Reschedule Request": "Richiesta di riprogrammazione",
       "Reschedule from Installment On": "Riprogrammare dalla rata in poi",
+      "Reset": "Reimpostato",
       "Residence Phone": "Telefono di residenza",
       "Resource": "Risorsa",
       "Resource ID": "ID risorsa",
@@ -3077,6 +3083,7 @@
       "Unable to update password": "Impossibile aggiornare la password",
       "Unassigned": "Non assegnato",
       "Unassignment Date": "Data di revoca dell'assegnazione",
+      "Undone": "Annullato",
       "Unique": "Unico",
       "Unit Type": "Tipo di unità",
       "Unrealized Income": "Reddito non realizzato",
@@ -3235,7 +3242,8 @@
       "Cross Rate": "Tasso incrociato",
       "Cross Rate via": "Tasso incrociato (tramite {{ currency }})",
       "Administrator": "Amministratore",
-      "Provider": "Provider"
+      "Provider": "Provider",
+      "Dispute Management": "Gestione delle controversie"
     },
     "links": {
       "Community": "Comunità",
@@ -3412,6 +3420,7 @@
       "Withdrawn": "Ritirato"
     },
     "dialogContext": {
+      "A new clean period will start today": "Da oggi inizierà un nuovo periodo pulito.",
       "Are you sure you want to resume the breach pause": "Sei sicuro di voler riprendere la violazione dopo la pausa ?",
       "Are you sure you want Unassign Staff": "Sei sicuro di voler deassegnare il personale",
       "Are you sure you want to calculate interest ?": "Sei sicuro di voler calcolare gli interessi ?",
@@ -3428,6 +3437,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "Sei sicuro di voler riprendere la Classificazione di Mancato Pagamento per il Prestito",
       "Are you sure you want": "Sei sicuro di voler",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "Abilitare la morosità riprende la valutazione della morosità e la ricalcola alla data operativa corrente",
+      "Reset neutralizes overdue delinquency periods effective today": "Questa azione ha effetto oggi e neutralizza tutti i periodi di morosità scaduti, rimuovendone le etichette.",
+      "Start new period splits the current period today": "Se abilitato, il periodo corrente viene suddiviso alla data odierna e un nuovo periodo inizia da oggi.",
       "the Loan Reschedule": "la Riorganizzazione del Prestito",
       "Are you sure you want undo the transaction": "Sei sicuro di voler annullare la transazione",
       "Are you sure you want undo the transaction type": "Sei sicuro di voler annullare il tipo di transazione",
@@ -3447,6 +3458,14 @@
       "undo_account_transfer": "Sei sicuro di voler annullare questo trasferimento conto?"
     },
     "text": {
+      "Agriculture Loan": "Prestito agricolo",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "Credito per esigenze agricole come la produzione di colture, i macchinari o la sistemazione dei terreni, generalmente legato ai cicli agricoli.",
+      "Education Loan": "Prestito per studi",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "Finanziamento delle tasse scolastiche e delle spese correlate per studi in Italia o all'estero, con opzioni di rimborso allineate alla durata del corso.",
+      "Personal Loan": "Prestito personale",
+      "Custom / Advanced": "Personalizzato / Avanzato",
+      "Two Wheeler Loan": "Prestito per veicoli a due ruote",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "Finanziamento di veicoli a due ruote nuovi o usati, con approvazione rapida e acconto flessibile.",
       "Max": "Max",
       "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "Nessuna azione di violazione",
@@ -4615,6 +4634,32 @@
         "latePayments": "Pagamenti in ritardo",
         "noData": "Nessun profilo di credito",
         "noDataHint": "Eseguire prima il controllo del bureau"
+      },
+      "dispute": {
+        "raiseTitle": "Presenta una nuova controversia",
+        "lookupTitle": "Cerca controversia esistente",
+        "submissionRecordId": "ID registrazione invio",
+        "disputeDetails": "Dettagli controversia",
+        "submissionIdRequired": "ID registrazione obbligatorio",
+        "detailsRequired": "I dettagli devono avere almeno 10 caratteri",
+        "raise": "Presenta controversia",
+        "lookup": "Cerca",
+        "disputeId": "ID controversia",
+        "id": "Controversia",
+        "submissionRef": "Rif. invio",
+        "raisedBy": "Presentata da",
+        "openedAt": "Aperta il",
+        "details": "Dettagli",
+        "resolvedAt": "Risolta il",
+        "resolutionNotes": "Note di risoluzione",
+        "expiry": "Data di scadenza",
+        "markUnderReview": "Segna in revisione",
+        "resolve": "Risolvi controversia",
+        "raised": "Controversia #{{ id }} presentata con successo",
+        "statusUpdated": "Stato aggiornato a {{ status }}"
+      },
+      "errors": {
+        "badRequest": "Richiesta non valida. Verificare l'ID di registrazione."
       }
     }
   },
@@ -4734,6 +4779,8 @@
     "May be entered to override": "Può essere inserito per sovrascrivere la data pianificata dal sistema",
     "May be entered to override the date": "Può essere inserito per sovrascrivere la data in cui il sistema inizierà ad addebitare gli interessi",
     "Minimum active period to consider for dividend calculations": "Periodo attivo minimo da considerare per il calcolo dei dividendi",
+    "Minimum payment criteria met": "Criterio di pagamento minimo soddisfatto.",
+    "Minimum payment criteria not met": "Criterio di pagamento minimo non soddisfatto.",
     "NPA (non performing asset) once the number of days": "Un prestito è un NPA (non Performing Asset) una volta superato il numero di giorni immessi in questo campo. Se questo campo è vuoto, il prestito sarà un NPA il giorno successivo al mancato pagamento programmato.",
     "Name of the loan product": "Il nome del prodotto di prestito su cui si basa il conto di prestito",
     "Navigation": "Navigazione",
@@ -4745,6 +4792,7 @@
     "Number of decimal places to be used to track and report": "Il numero di cifre decimali da utilizzare per tenere traccia e segnalare i prestiti.",
     "PENDING": "IN ATTESA DI",
     "Pay Charge": "Pagare la tassa",
+    "Period not yet evaluated": "Periodo non ancora valutato.",
     "Primary Key": "Chiave primaria",
     "Print Loan Application": "Stampa domanda di prestito",
     "Process Remittance": "Elabora rimessa",
@@ -4761,6 +4809,7 @@
     "Remove Client from Group": "Rimuovi il cliente dal gruppo",
     "Remove Period": "Rimuovi punto",
     "Repayment schedule will start the installment": "Il piano di rimborso inizierà con le date delle rate a partire dalla data di presentazione o dalla data di erogazione",
+    "Reset delinquency period": "Periodo di morosità reimpostato (neutralizzato, nessun importo previsto).",
     "Resume Delinquency Classification": "Riprendi la classificazione delinquenza",
     "Savings Account": "Conto di risparmio",
     "Sets the balance required for interest calculation": "Imposta il saldo richiesto per il calcolo degli interessi",

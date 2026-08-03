@@ -1129,6 +1129,11 @@
       "NotEqual": "Nelygu"
     },
     "heading": {
+      "Create Agriculture Loan": "Sukurti žemės ūkio paskolą",
+      "Create Education Loan": "Sukurti studijų paskolą",
+      "Create Personal Loan": "Sukurti vartojimo paskolą",
+      "Create Two Wheeler Loan": "Sukurti motociklų ir motorolerių paskolą",
+      "Custom / Advanced Loan Configuration": "Pasirinktinė / išplėstinė paskolos konfigūracija",
       "Breach Actions": "Pažeidimas Veiksmai",
       "Delinquency & Breach": "Delinkvencija ir pažeidimas",
       "Interest": "Palūkanos",
@@ -2839,6 +2844,7 @@
       "Reschedule Reason": "Suplanuoti perkėlimą Priežastis",
       "Reschedule Request": "Prašymas pakeisti tvarkaraštį",
       "Reschedule from Installment On": "Perkelkite laiką nuo išsimokėtinai",
+      "Reset": "Atstatyta",
       "Residence Phone": "Gyvenamoji vieta Telefonas",
       "Resource": "Išteklius",
       "Resource ID": "Ištekliaus ID",
@@ -3076,6 +3082,7 @@
       "Unable to update password": "Nepavyko atnaujinti slaptažodžio",
       "Unassigned": "Nepriskirta",
       "Unassignment Date": "Atšaukimo data",
+      "Undone": "Atšaukta",
       "Unique": "Unikalus",
       "Unit Type": "Vieneto tipas",
       "Unrealized Income": "Nerealizuotos pajamos",
@@ -3234,7 +3241,8 @@
       "Cross Rate": "Kryžminis kursas",
       "Cross Rate via": "Kryžminis kursas (per {{ currency }})",
       "Administrator": "Administratorius",
-      "Provider": "Teikėjas"
+      "Provider": "Teikėjas",
+      "Dispute Management": "Gincu valdymas"
     },
     "links": {
       "Community": "bendruomenė",
@@ -3412,6 +3420,7 @@
       "Withdrawn": "Pasitraukė"
     },
     "dialogContext": {
+      "A new clean period will start today": "Nuo šiandien prasidės naujas švarus laikotarpis.",
       "Are you sure you want to resume the breach pause": "Ar tikrai norite atnaujinti pažeidimo sustabdymą?",
       "Are you sure you want Unassign Staff": "Ar tikrai norite atšaukti darbuotojo priskyrimą?",
       "Are you sure you want to calculate interest ?": "Ar tikrai norite skaičiuoti palūkanas?",
@@ -3428,6 +3437,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "Ar tikrai norite atnaujinti Vėlavimo klasifikavimą skolai?",
       "Are you sure you want": "Ar tikrai norite",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "Įsiskolinimo įjungimas atnaujina įsiskolinimo vertinimą ir perskaičiuoja jį pagal dabartinę verslo datą",
+      "Reset neutralizes overdue delinquency periods effective today": "Šis veiksmas įsigalioja šiandien ir neutralizuoja visus pradelstus įsiskolinimo laikotarpius, panaikindamas jų įsiskolinimo žymas.",
+      "Start new period splits the current period today": "Jei įjungta, dabartinis laikotarpis padalijamas šiandienos data ir naujas laikotarpis prasideda nuo šiandien.",
       "the Loan Reschedule": "skolos tvarkaraštį iš naujo",
       "Are you sure you want undo the transaction": "Ar tikrai norite atšaukti šią operaciją?",
       "Are you sure you want undo the transaction type": "Ar tikrai norite atšaukti šios operacijos tipą?",
@@ -3447,6 +3458,14 @@
       "undo_account_transfer": "Ar tikrai norite atšaukti šį sąskaitos pervedimą?"
     },
     "text": {
+      "Agriculture Loan": "Žemės ūkio paskola",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "Kreditas žemės ūkio poreikiams, tokiems kaip augalininkystė, technika ar žemės gerinimas, paprastai derinamas prie žemės ūkio ciklų.",
+      "Education Loan": "Studijų paskola",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "Studijų mokesčio ir kitų susijusių išlaidų finansavimas mokantis šalyje ar užsienyje, su studijų trukmei pritaikytomis grąžinimo galimybėmis.",
+      "Personal Loan": "Vartojimo paskola",
+      "Custom / Advanced": "Pasirinktinė / išplėstinė",
+      "Two Wheeler Loan": "Motociklų ir motorolerių paskola",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "Naujų ar naudotų motociklų ir motorolerių finansavimas su greitu patvirtinimu ir lanksčia pradine įmoka.",
       "Max": "Maks",
       "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "Nėra Pažeidimas Veiksmai",
@@ -4615,6 +4634,32 @@
         "latePayments": "Pavėluoti mokėjimai",
         "noData": "Kredito profilis nepasiekiamas",
         "noDataHint": "Atlikite biuro patikrinimą"
+      },
+      "dispute": {
+        "raiseTitle": "Pateikti nauja gincu",
+        "lookupTitle": "Ieskoti esamo ginco",
+        "submissionRecordId": "Pateikimo iraso ID",
+        "disputeDetails": "Ginco detales",
+        "submissionIdRequired": "Pateikimo iraso ID yra privalomas",
+        "detailsRequired": "Detales turi buti bent 10 simboliu",
+        "raise": "Pateikti gincu",
+        "lookup": "Ieskoti",
+        "disputeId": "Ginco ID",
+        "id": "Gincas",
+        "submissionRef": "Pateikimo ref.",
+        "raisedBy": "Pateike",
+        "openedAt": "Atidarytas",
+        "details": "Detales",
+        "resolvedAt": "Issprendyta",
+        "resolutionNotes": "Sprendimo pastabos",
+        "expiry": "Galiojimo pabaiga",
+        "markUnderReview": "Pazymeti kaip perziurima",
+        "resolve": "Issprusti gincu",
+        "raised": "Gincas #{{ id }} sekmin gai pateiktas",
+        "statusUpdated": "Ginco busena atnaujinta i {{ status }}"
+      },
+      "errors": {
+        "badRequest": "Neteisinga užklausa. Patikrinkite pateikimo įrašo ID."
       }
     }
   },
@@ -4734,6 +4779,8 @@
     "May be entered to override": "Galima įvesti, kad būtų nepaisoma datos, kurią sistema suplanuotų",
     "May be entered to override the date": "Galima įvesti, kad būtų nepaisoma data, kada sistema pradės skaičiuoti palūkanas",
     "Minimum active period to consider for dividend calculations": "Mažiausias aktyvus laikotarpis, į kurį reikia atsižvelgti apskaičiuojant dividendus",
+    "Minimum payment criteria met": "Minimalaus mokėjimo kriterijus įvykdytas.",
+    "Minimum payment criteria not met": "Minimalaus mokėjimo kriterijus neįvykdytas.",
     "NPA (non performing asset) once the number of days": "Paskola yra NPA (nenašus turtas), kai viršijamas šiame lauke įrašytas dienų skaičius. Jei šis laukas yra tuščias, paskola bus NPA kitą dieną po numatyto mokėjimo.",
     "Name of the loan product": "Paskolos produkto, kuriuo grindžiama paskolos sąskaita, pavadinimas",
     "Navigation": "Navigacija",
@@ -4745,6 +4792,7 @@
     "Number of decimal places to be used to track and report": "Skaičius po kablelio, kuris turi būti naudojamas stebint ir ataskaitoms apie paskolas.",
     "PENDING": "LAUKIAMA",
     "Pay Charge": "Mokėti mokestį",
+    "Period not yet evaluated": "Laikotarpis dar neįvertintas.",
     "Primary Key": "Pirminis raktas",
     "Print Loan Application": "Spausdinti paskolos paraišką",
     "Process Remittance": "Apdoroti pervedimą",
@@ -4761,6 +4809,7 @@
     "Remove Client from Group": "Pašalinti klientą iš grupės",
     "Remove Period": "Pašalinti laikotarpį",
     "Repayment schedule will start the installment": "Grąžinimo grafikas pradedamas skaičiuoti nuo įmokų pateikimo datos arba išmokėjimo datos",
+    "Reset delinquency period": "Atstatytas įsiskolinimo laikotarpis (neutralizuotas, nėra numatomos sumos).",
     "Resume Delinquency Classification": "Atnaujinti delspinijos klasifikaciją",
     "Savings Account": "Taupomoji sąskaita",
     "Sets the balance required for interest calculation": "Nustato likutį, reikalingą palūkanų skaičiavimui",

@@ -1132,6 +1132,11 @@
       "NotEqual": "Ungleich"
     },
     "heading": {
+      "Create Agriculture Loan": "Agrarkredit erstellen",
+      "Create Education Loan": "Bildungskredit erstellen",
+      "Create Personal Loan": "Privatkredit erstellen",
+      "Create Two Wheeler Loan": "Zweiradkredit erstellen",
+      "Custom / Advanced Loan Configuration": "Benutzerdefinierte / erweiterte Kreditkonfiguration",
       "Breach Actions": "Verstoßaktionen",
       "Delinquency & Breach": "Verzug & Verstoß",
       "Interest": "Zinsen",
@@ -2842,6 +2847,7 @@
       "Reschedule Reason": "Grund für die Neuplanung",
       "Reschedule Request": "Umbuchungsanfrage",
       "Reschedule from Installment On": "Ab Ratenzahlung verschieben",
+      "Reset": "Zurückgesetzt",
       "Residence Phone": "Telefon zu Hause",
       "Resource": "Ressource",
       "Resource ID": "Ressourcen-ID",
@@ -3079,6 +3085,7 @@
       "Unable to update password": "Passwort konnte nicht aktualisiert werden",
       "Unassigned": "Nicht zugewiesen",
       "Unassignment Date": "Datum der Aufhebung der Zuweisung",
+      "Undone": "Rückgängig gemacht",
       "Unique": "Einzigartig",
       "Unit Type": "Gerätetyp",
       "Unrealized Income": "Nicht realisierter Ertrag",
@@ -3237,7 +3244,8 @@
       "Cross Rate": "Kreuzkurs",
       "Cross Rate via": "Kreuzkurs (über {{ currency }})",
       "Administrator": "Administrator",
-      "Provider": "Anbieter"
+      "Provider": "Anbieter",
+      "Dispute Management": "Streitverwaltung"
     },
     "links": {
       "Community": "Gemeinschaft",
@@ -3415,6 +3423,7 @@
       "Withdrawn": "Zurückgezogen"
     },
     "dialogContext": {
+      "A new clean period will start today": "Ab heute beginnt eine neue, saubere Periode.",
       "Are you sure you want to resume the breach pause": "Sind Sie sicher, dass Sie den Verstoß wirklich fortsetzen",
       "Are you sure you want Unassign Staff": "Sind Sie sicher, dass Sie das Personal freistellen möchten",
       "Are you sure you want to calculate interest ?": "Sind Sie sicher, dass Sie Zinsen berechnen möchten ?",
@@ -3431,6 +3440,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "Sind Sie sicher, dass Sie die Delinquenzklassifizierung für das Darlehen fortsetzen möchten",
       "Are you sure you want": "Sind Sie sicher, dass Sie möchten",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "Das Aktivieren des Verzugs setzt die Verzugsbewertung fort und berechnet sie zum aktuellen Geschäftsdatum neu",
+      "Reset neutralizes overdue delinquency periods effective today": "Diese Aktion wird heute wirksam und neutralisiert alle überfälligen Verzugsperioden und hebt deren Verzugskennzeichen auf.",
+      "Start new period splits the current period today": "Wenn aktiviert, wird die aktuelle Periode zum heutigen Datum geteilt und eine neue Periode beginnt ab heute.",
       "the Loan Reschedule": "die Umplanung des Darlehens",
       "Are you sure you want undo the transaction": "Sind Sie sicher, dass Sie die Transaktion rückgängig machen möchten",
       "Are you sure you want undo the transaction type": "Sind Sie sicher, dass Sie den Transaktionstyp rückgängig machen möchten",
@@ -3450,6 +3461,14 @@
       "undo_account_transfer": "Möchten Sie diesen Kontotransfer wirklich rückgängig machen?"
     },
     "text": {
+      "Agriculture Loan": "Agrarkredit",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "Kredit für landwirtschaftliche Zwecke wie Pflanzenbau, Maschinen oder Flächenerschließung, meist an die landwirtschaftlichen Zyklen gekoppelt.",
+      "Education Loan": "Bildungskredit",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "Finanzierung von Studiengebühren und damit verbundenen Kosten für ein Studium im In- oder Ausland, mit an die Studiendauer angepassten Rückzahlungsoptionen.",
+      "Personal Loan": "Privatkredit",
+      "Custom / Advanced": "Benutzerdefiniert / Erweitert",
+      "Two Wheeler Loan": "Zweiradkredit",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "Finanzierung neuer oder gebrauchter Zweiräder mit schneller Zusage und flexibler Anzahlung.",
       "Max": "Max",
       "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "Keine Verstoßaktionen",
@@ -4611,6 +4630,32 @@
         "latePayments": "Verspätete Zahlungen",
         "noData": "Kein Kreditprofil verfügbar",
         "noDataHint": "Zuerst Bürobereitschaftsprüfung durchführen"
+      },
+      "dispute": {
+        "raiseTitle": "Neuen Streitfall einreichen",
+        "lookupTitle": "Bestehenden Streitfall suchen",
+        "submissionRecordId": "Einreichungs-ID",
+        "disputeDetails": "Streitdetails",
+        "submissionIdRequired": "Einreichungs-ID ist erforderlich",
+        "detailsRequired": "Details müssen mindestens 10 Zeichen haben",
+        "raise": "Streit einreichen",
+        "lookup": "Suchen",
+        "disputeId": "Streit-ID",
+        "id": "Streitfall",
+        "submissionRef": "Einreichungsref.",
+        "raisedBy": "Eingereicht von",
+        "openedAt": "Geöffnet am",
+        "details": "Details",
+        "resolvedAt": "Gelöst am",
+        "resolutionNotes": "Lösungsnotizen",
+        "expiry": "Ablaufdatum",
+        "markUnderReview": "Als in Prüfung markieren",
+        "resolve": "Streit lösen",
+        "raised": "Streitfall #{{ id }} erfolgreich eingereicht",
+        "statusUpdated": "Streitstatus auf {{ status }} aktualisiert"
+      },
+      "errors": {
+        "badRequest": "Ungültige Anfrage. Bitte überprüfen Sie die Einreichungs-ID."
       }
     }
   },
@@ -5021,6 +5066,8 @@
     "May be entered to override": "Kann eingegeben werden, um das vom System geplante Datum zu überschreiben",
     "May be entered to override the date": "Kann eingegeben werden, um das Datum zu überschreiben, an dem das System beginnen würde, Zinsen zu berechnen",
     "Minimum active period to consider for dividend calculations": "Mindestaktiver Zeitraum, der bei Dividendenberechnungen berücksichtigt werden muss",
+    "Minimum payment criteria met": "Mindestzahlungskriterium erfüllt.",
+    "Minimum payment criteria not met": "Mindestzahlungskriterium nicht erfüllt.",
     "NPA (non performing asset) once the number of days": "Ein Kredit gilt als NPA (Non Performing Asset), sobald die in diesem Feld eingegebene Anzahl von Tagen überschritten wird. Wenn dieses Feld leer ist, gilt das Darlehen am Tag nach dem Versäumnis einer geplanten Zahlung als NPA.",
     "Name of the loan product": "Der Name des Kreditprodukts, auf dem das Kreditkonto basiert",
     "Navigation": "Navigation",
@@ -5032,6 +5079,7 @@
     "Number of decimal places to be used to track and report": "Die Anzahl der Dezimalstellen, die zur Nachverfolgung und Berichterstattung über Kredite verwendet werden sollen.",
     "PENDING": "AUSSTEHEND",
     "Pay Charge": "Gebühr bezahlen",
+    "Period not yet evaluated": "Periode noch nicht bewertet.",
     "Primary Key": "Primärschlüssel",
     "Print Loan Application": "Darlehensantrag drucken",
     "Process Remittance": "Überweisung bearbeiten",
@@ -5048,6 +5096,7 @@
     "Remove Client from Group": "Client aus Gruppe entfernen",
     "Remove Period": "Punkt entfernen",
     "Repayment schedule will start the installment": "Der Rückzahlungsplan beginnt mit den Ratenterminen ab dem Einreichungsdatum oder dem Auszahlungsdatum",
+    "Reset delinquency period": "Zurückgesetzte Verzugsperiode (neutralisiert, kein erwarteter Betrag).",
     "Resume Delinquency Classification": "Delinquenzklassifizierung fortsetzen",
     "Savings Account": "Sparkonto",
     "Sets the balance required for interest calculation": "Legt den für die Zinsberechnung erforderlichen Saldo fest",

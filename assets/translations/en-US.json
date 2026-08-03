@@ -1145,6 +1145,11 @@
       "NotEqual": "Not equal"
     },
     "heading": {
+      "Create Agriculture Loan": "Create Agriculture Loan",
+      "Create Education Loan": "Create Education Loan",
+      "Create Personal Loan": "Create Personal Loan",
+      "Create Two Wheeler Loan": "Create Two Wheeler Loan",
+      "Custom / Advanced Loan Configuration": "Custom / Advanced Loan Configuration",
       "Breach Actions": "Breach Actions",
       "Delinquency & Breach": "Delinquency & Breach",
       "Interest": "Interest",
@@ -1629,7 +1634,8 @@
       "Exchange Rate": "Exchange Rate",
       "Create Exchange Rate": "Create Exchange Rate",
       "View Exchange Rate": "View Exchange Rate",
-      "Edit Exchange Rate": "Edit Exchange Rate"
+      "Edit Exchange Rate": "Edit Exchange Rate",
+      "Theme": "Theme"
     },
     "inputs": {
       "Breach Actions": "Breach Actions",
@@ -2882,6 +2888,7 @@
       "Reschedule Reason": "Reschedule Reason",
       "Reschedule Request": "Reschedule Request",
       "Reschedule from Installment On": "Reschedule from Installment On",
+      "Reset": "Reset",
       "Residence Phone": "Residence Phone",
       "Resource": "Resource",
       "Resource ID": "Resource ID",
@@ -3128,6 +3135,7 @@
       "Unable to update password": "Unable to update password",
       "Unassigned": "Unassigned",
       "Unassignment Date": "Unassignment Date",
+      "Undone": "Undone",
       "Unique": "Unique",
       "Unit Type": "Unit Type",
       "Unrealized Income": "Unrealized Income",
@@ -3263,7 +3271,15 @@
       "Cross Rate": "Cross Rate",
       "Cross Rate via": "Cross Rate (via {{ currency }})",
       "Administrator": "Administrator",
-      "Provider": "Provider"
+      "Provider": "Provider",
+      "Dispute Management": "Dispute Management",
+      "Blue": "Blue",
+      "Green": "Green",
+      "Purple": "Purple",
+      "Orange": "Orange",
+      "Red": "Red",
+      "Yellow": "Yellow",
+      "Primary Color": "Primary Color"
     },
     "links": {
       "Community": "Community",
@@ -3381,7 +3397,7 @@
       "Self Service": "Self Service",
       "Sell Loan": "Sell Loan",
       "Settings": "Settings",
-      "Sign Out": "Sign Out",
+      "Sign Out": "Logout",
       "System": "System",
       "Task Management": "Task Management",
       "Tasks": "Tasks",
@@ -3442,6 +3458,7 @@
       "Withdrawn": "Withdrawn"
     },
     "dialogContext": {
+      "A new clean period will start today": "A new clean period will start from today.",
       "Are you sure you want to resume the breach pause": "Are you sure you want to resume the breach pause",
       "Are you sure you want Unassign Staff": "Are you sure you want Unassign Staff",
       "Are you sure you want to calculate interest ?": "Are you sure you want to calculate interest ?",
@@ -3457,6 +3474,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "Are you sure you want resume the Delinquency Classification for Loan ",
       "Are you sure you want": "Are you sure you want ",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date",
+      "Reset neutralizes overdue delinquency periods effective today": "This action takes effect today and neutralizes all overdue delinquency periods, lifting their delinquency tags.",
+      "Start new period splits the current period today": "When enabled, the current period is split at today's date and a fresh period starts from today.",
       "the Loan Reschedule": "the Loan Reschedule ",
       "Are you sure you want undo the transaction": "Are you sure you want undo the transaction ",
       "Are you sure you want undo the transaction type": "Are you sure you want undo the transaction type ",
@@ -3477,6 +3496,14 @@
       "the Transaction Type": "the Transaction Type"
     },
     "text": {
+      "Agriculture Loan": "Agriculture Loan",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles.",
+      "Education Loan": "Education Loan",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration.",
+      "Personal Loan": "Personal Loan",
+      "Custom / Advanced": "Custom / Advanced",
+      "Two Wheeler Loan": "Two Wheeler Loan",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "Finance for new or used two-wheelers with quick approval and flexible down payment options.",
       "Max": "Max",
       "Min": "Min",
       "Any": "Any",
@@ -4401,7 +4428,12 @@
       "Create Exchange Rate": "Create Exchange Rate",
       "View Exchange Rate": "View Exchange Rate",
       "Edit Exchange Rate": "Edit Exchange Rate",
-      "Currency conversion failed. Please try again.": "Currency conversion failed. Please try again."
+      "Currency conversion failed. Please try again.": "Currency conversion failed. Please try again.",
+      "Set the primary color used across this tenant": "Set the primary color used across this tenant",
+      "Tenant theme explanation": "The primary color is applied to every user of this tenant. Individual users cannot override it.",
+      "Tenant theme unavailable": "The theme configuration is not available on this server. The default color is being used.",
+      "Tenant theme updated successfully": "Tenant theme updated successfully",
+      "Theme": "Theme"
     },
     "permissions": {
       "actions": {
@@ -4716,7 +4748,8 @@
         "forbidden": "You do not have permission to check bureau readiness.",
         "clientNotFound": "Client {{ clientId }} not found in Fineract.",
         "serviceUnavailable": "CDC or Fineract is unreachable. Please try again later.",
-        "unexpected": "An unexpected error occurred. Please try again."
+        "unexpected": "An unexpected error occurred. Please try again.",
+        "badRequest": "Invalid request. Please check the submission record ID."
       },
       "dashboard": {
         "role": "Your CB-ILD Role",
@@ -4752,6 +4785,29 @@
         "latePayments": "Late Payments",
         "noData": "No credit profile available yet",
         "noDataHint": "Run Bureau Readiness check first to pull data from CDC"
+      },
+      "dispute": {
+        "raiseTitle": "Raise a New Dispute",
+        "lookupTitle": "Look Up Existing Dispute",
+        "submissionRecordId": "Submission Record ID",
+        "disputeDetails": "Dispute Details",
+        "submissionIdRequired": "Submission Record ID is required",
+        "detailsRequired": "Dispute details must be at least 10 characters",
+        "raise": "Raise Dispute",
+        "lookup": "Look Up",
+        "disputeId": "Dispute ID",
+        "id": "Dispute",
+        "submissionRef": "Submission Ref",
+        "raisedBy": "Raised By",
+        "openedAt": "Opened At",
+        "details": "Details",
+        "resolvedAt": "Resolved At",
+        "resolutionNotes": "Resolution Notes",
+        "expiry": "Expiry Date",
+        "markUnderReview": "Mark Under Review",
+        "resolve": "Resolve Dispute",
+        "raised": "Dispute #{{ id }} raised successfully",
+        "statusUpdated": "Dispute status updated to {{ status }}"
       }
     },
     "selections": {
@@ -4910,6 +4966,8 @@
     "May be entered to override": "May be entered to override the date the system would schedule",
     "May be entered to override the date": "May be entered to override the date the system would start charging interest",
     "Minimum active period to consider for dividend calculations": "Minimum active period to consider for dividend calculations",
+    "Minimum payment criteria met": "Minimum payment criteria met.",
+    "Minimum payment criteria not met": "Minimum payment criteria not met.",
     "NPA (non performing asset) once the number of days": "A loan is a NPA (non performing asset) once the number of days entered into this field is exceeded. If this field is blank, the loan will be an NPA the day after a scheduled payment is missed.",
     "Name of the loan product": "The name of the loan product that the loan account is based upon",
     "Navigation": "Navigation",
@@ -4921,6 +4979,7 @@
     "Number of decimal places to be used to track and report": "The number of decimal places to be used to track and report on loans.",
     "PENDING": "PENDING",
     "Pay Charge": "Pay Charge",
+    "Period not yet evaluated": "Period not yet evaluated.",
     "Primary Key": "Primary Key",
     "Print Loan Application": "Print Loan Application",
     "Process Remittance": "Process Remittance",
@@ -4937,6 +4996,7 @@
     "Remove Client from Group": "Remove Client from Group",
     "Remove Period": "Remove Period",
     "Repayment schedule will start the installment": "Repayment schedule will start the installment dates from the submitted date or the disbursement date",
+    "Reset delinquency period": "Reset delinquency period (neutralized, no expected amount).",
     "Resume Delinquency Classification": "Resume Delinquency Classification",
     "Savings Account": "Savings Account",
     "Sets the balance required for interest calculation": "Sets the balance required for interest calculation",

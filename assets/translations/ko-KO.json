@@ -1130,6 +1130,11 @@
       "NotEqual": "같지 않음"
     },
     "heading": {
+      "Create Agriculture Loan": "농업 대출 생성",
+      "Create Education Loan": "교육 대출 생성",
+      "Create Personal Loan": "개인 대출 생성",
+      "Create Two Wheeler Loan": "이륜차 대출 생성",
+      "Custom / Advanced Loan Configuration": "사용자 지정 / 고급 대출 구성",
       "Breach Actions": "위반 행위",
       "Delinquency & Breach": "연체 및 위반",
       "Interest": "이자",
@@ -2841,6 +2846,7 @@
       "Reschedule Reason": "일정 변경 이유",
       "Reschedule Request": "일정 변경 요청",
       "Reschedule from Installment On": "할부부터 일정 변경",
+      "Reset": "재설정됨",
       "Residence Phone": "거주지 전화번호",
       "Resource": "자원",
       "Resource ID": "리소스 ID",
@@ -3077,6 +3083,7 @@
       "Unable to update password": "비밀번호를 업데이트할 수 없습니다",
       "Unassigned": "할당되지 않음",
       "Unassignment Date": "할당 취소 날짜",
+      "Undone": "실행 취소됨",
       "Unique": "고유한",
       "Unit Type": "단위 유형",
       "Unrealized Income": "미실현 수익",
@@ -3235,7 +3242,8 @@
       "Cross Rate": "교차 환율",
       "Cross Rate via": "교차 환율 ({{ currency }} 경유)",
       "Administrator": "관리자",
-      "Provider": "제공자"
+      "Provider": "제공자",
+      "Dispute Management": "분쟁 관리"
     },
     "links": {
       "Community": "지역 사회",
@@ -3412,6 +3420,7 @@
       "Withdrawn": "빼는"
     },
     "dialogContext": {
+      "A new clean period will start today": "오늘부터 새로운 깨끗한 기간이 시작됩니다.",
       "Are you sure you want to resume the breach pause": "중단된 작업을 재개하시겠습니까?",
       "Are you sure you want Unassign Staff": "직원 해제를 하시겠습니까?",
       "Are you sure you want to calculate interest ?": "이자를 계산하시겠습니까?",
@@ -3428,6 +3437,8 @@
       "Are you sure you want resume the Delinquency Classification for Loan": "대출에 대한 연체 분류를 재개하시겠습니까?",
       "Are you sure you want": "확실하게 원하시나요?",
       "Enabling delinquency resumes the delinquency evaluation and recalculates it as of the current business date": "연체를 활성화하면 연체 평가가 재개되고 현재 영업일 기준으로 다시 계산됩니다",
+      "Reset neutralizes overdue delinquency periods effective today": "이 작업은 오늘부터 적용되며 기한이 지난 모든 연체 기간을 무효화하고 해당 연체 태그를 해제합니다.",
+      "Start new period splits the current period today": "활성화하면 현재 기간이 오늘 날짜로 분할되고 오늘부터 새 기간이 시작됩니다.",
       "the Loan Reschedule": "대출 재일정",
       "Are you sure you want undo the transaction": "이 거래를 취소하시겠습니까?",
       "Are you sure you want undo the transaction type": "이 거래 유형을 취소하시겠습니까?",
@@ -3447,6 +3458,14 @@
       "undo_account_transfer": "이 계좌 이체를 취소하시겠습니까?"
     },
     "text": {
+      "Agriculture Loan": "농업 대출",
+      "Credit for farming-related needs such as crop production, equipment, or land development, often tied to agricultural cycles": "작물 생산, 장비, 농지 개발 등 영농 관련 자금을 지원하며, 일반적으로 영농 주기에 맞춰 운영되는 대출입니다.",
+      "Education Loan": "교육 대출",
+      "Funding for tuition and related expenses for domestic or international studies, with repayment options aligned to course duration": "국내외 학업의 등록금 및 관련 비용을 지원하며, 학업 기간에 맞춘 상환 옵션을 제공합니다.",
+      "Personal Loan": "개인 대출",
+      "Custom / Advanced": "사용자 지정 / 고급",
+      "Two Wheeler Loan": "이륜차 대출",
+      "Finance for new or used two-wheelers with quick approval and flexible down payment options": "신차 및 중고 이륜차 구입 자금을 빠른 승인과 유연한 계약금 옵션으로 지원합니다.",
       "Max": "최대",
       "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "위반 행위 없음",
@@ -4614,6 +4633,32 @@
         "latePayments": "연체 횟수",
         "noData": "신용 프로필 없음",
         "noDataHint": "신용조회 준비 확인 실행"
+      },
+      "dispute": {
+        "raiseTitle": "새 분쟁 제기",
+        "lookupTitle": "기존 분쟁 조회",
+        "submissionRecordId": "제출 기록 ID",
+        "disputeDetails": "분쟁 세부 사항",
+        "submissionIdRequired": "제출 기록 ID가 필요합니다",
+        "detailsRequired": "세부 사항은 최소 10자 이상이어야 합니다",
+        "raise": "분쟁 제기",
+        "lookup": "조회",
+        "disputeId": "분쟁 ID",
+        "id": "분쟁",
+        "submissionRef": "제출 참조",
+        "raisedBy": "제기자",
+        "openedAt": "개시일",
+        "details": "세부 사항",
+        "resolvedAt": "해결일",
+        "resolutionNotes": "해결 메모",
+        "expiry": "만료일",
+        "markUnderReview": "검토 중으로 표시",
+        "resolve": "분쟁 해결",
+        "raised": "분쟁 #{{ id }} 성공적으로 제기됨",
+        "statusUpdated": "분쟁 상태가 {{ status }}로 업데이트됨"
+      },
+      "errors": {
+        "badRequest": "잘못된 요청입니다. 제출 기록 ID를 확인하세요."
       }
     }
   },
@@ -4733,6 +4778,8 @@
     "May be entered to override": "시스템이 예약하는 날짜를 무시하기 위해 입력될 수 있습니다.",
     "May be entered to override the date": "시스템이 이자를 부과하기 시작하는 날짜를 무시하기 위해 입력될 수 있습니다.",
     "Minimum active period to consider for dividend calculations": "배당금 계산을 위해 고려해야 할 최소 활성 기간",
+    "Minimum payment criteria met": "최소 지급 기준 충족.",
+    "Minimum payment criteria not met": "최소 지급 기준 미충족.",
     "NPA (non performing asset) once the number of days": "이 필드에 입력한 일수가 초과되면 대출은 NPA(비수행 자산)입니다. 이 필드가 비어 있으면 예정된 지불을 놓친 다음 날 대출이 NPA가 됩니다.",
     "Name of the loan product": "대출 계좌의 기반이 되는 대출 상품명",
     "Navigation": "항해",
@@ -4744,6 +4791,7 @@
     "Number of decimal places to be used to track and report": "대출을 추적하고 보고하는 데 사용되는 소수점 이하 자릿수입니다.",
     "PENDING": "보류 중",
     "Pay Charge": "요금 지불",
+    "Period not yet evaluated": "아직 평가되지 않은 기간입니다.",
     "Primary Key": "기본 키",
     "Print Loan Application": "대출 신청서 인쇄",
     "Process Remittance": "송금 처리",
@@ -4760,6 +4808,7 @@
     "Remove Client from Group": "그룹에서 클라이언트 제거",
     "Remove Period": "기간 삭제",
     "Repayment schedule will start the installment": "상환일정은 제출일 또는 지급일로부터 분할납부일이 시작됩니다.",
+    "Reset delinquency period": "재설정된 연체 기간(무효화됨, 예상 금액 없음).",
     "Resume Delinquency Classification": "연체 분류를 재개하십시오",
     "Savings Account": "예금 계좌",
     "Sets the balance required for interest calculation": "이자 계산에 필요한 잔액을 설정합니다.",
